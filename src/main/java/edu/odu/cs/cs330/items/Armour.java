@@ -228,8 +228,12 @@ public class Armour extends Item {
     @Override
     public String toString()
     {
-        String str = "Nme: " + name + "\nDur: " + durability + "\nDef: " + defense 
-            + "\nMtl: " + material + "\nMdr: " + modifier + " (Lvl " + modiferLevel + ")\nEmt: " + element;
+        String str = "  Nme: " + name + "\n"
+                + "  Dur: " + durability + "\n"
+                + "  Def: " + defense + "\n"
+                + "  Mtl: " + material + "\n"
+                + "  Mdr: " + modifier + " (Lvl " + modiferLevel + ")\n"
+                + "  Emt: " + element + "\n";
 
         return str;
     }

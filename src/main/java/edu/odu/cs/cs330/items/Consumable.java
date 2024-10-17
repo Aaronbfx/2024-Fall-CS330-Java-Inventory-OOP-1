@@ -112,6 +112,8 @@ public class Consumable extends Item {
     @Override
     public String toString()
     {
-        return "Nme: " + name + "\n Eft: " + effect + "\n Use: " + uses;
+        return "  Nme: " + name + "\n"
+            + "  Eft: " + effect + "\n"
+            + "  Use: " + uses + "\n";
     }
 }
