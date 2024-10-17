@@ -203,9 +203,13 @@ public class Armour extends Item {
     @Override
     public void read(Scanner snr)
     {
-        super.name   = snr.next();
-
-        // Complete this method
+        super.name = snr.next();
+        material = snr.next();
+        durability = snr.nextInt();
+        defense = snr.nextInt();
+        modifier = snr.next();
+        modiferLevel = snr.nextInt();
+        element = snr.next();
     }
 
     /**
@@ -224,7 +228,10 @@ public class Armour extends Item {
     @Override
     public String toString()
     {
-        return "Implement This Function";
+        String str = "Nme: " + name + "\nDur: " + durability + "\nDef: " + defense 
+            + "\nMtl: " + material + "\nMdr: " + modifier + " (Lvl " + modiferLevel + ")\nEmt: " + element;
+
+        return str;
     }
 }
 
